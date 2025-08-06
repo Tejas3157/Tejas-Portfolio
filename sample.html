@@ -7,118 +7,106 @@
 </head>
 <body>
     <header>
-        <h1>Welocome to My Portfolio</h1>
-        <p>Here you can see my projects and skils</p>
+        <h1>Welcome to My Portfolio</h1>
+        <p>Here you can see my projects and skills</p>
     </header>
     <nav>
-        <a href ="#home">Home</a> |
-        <a href="#About">About Me</a> |
+        <a href="#home">Home</a> |
+        <a href="#about">About Me</a> |
         <a href="#contact">Contact</a>
     </nav>
     <hr>
-    <section>
-        <h2>About Me</h2>
-        <img src="#image" alt="profile picture" width="150" height="150">
-        <p>My name is <strong>D.Tejas</strong>. I started my journey as a UI/UX Developer </p>
-    </section>
+    <main>
+        <div>
+            <h2>About Me</h2>
+            <img src="profile" alt="profile">
+            <p>My name is <strong>D.Tejas</strong>. I started my journey as a UI/UX Developer</p>
+        </div>
+        <hr>
+        <div>
+            <h2>My Skills</h2>
+            <h3>Soft Skills</h3>
+            <ul>
+                <li>Team Work</li>
+                <li>Time Mangement</li>
+                <li>Communication</li>
+            </ul>
+            <h3>Technical Skills</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </div>
+        <hr>
+        <div>
+            <h2>Subjects & Grades</h2>
+            <table border="1px">
+                <tr>
+                    <th>Subject</th>
+                    <th>Marks</th>
+                    <th>Grades</th>
+                </tr>
+                <tr>
+                    <td>HTML</td>
+                    <td>90</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>80</td>
+                    <td>B+</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>70</td>
+                    <td>B</td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+        <div>
+            <h2>Register Form</h2>
+            <form action="/submit">
+                <label for="name">Full Name</label>
+                <input type="text" name="fullname" id="fullname" placeholder="Enter your full name" required><br><br>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="emai" placeholder="Enter your Email" required><br><br>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="Enter Password" required><br><br>
+                <label for="password">Confirm Password</label>
+                <input type="password" name="Confirm password" id="Confirm password" placeholder="Enter Confirm Password" required><br><br>
+                <label for="gender">Gender:</label><br>
+                <input type="radio" name="gender" value="male">Male <br>
+                <input type="radio" name="gender" value="female">Female <br>
+                <input type="radio" name="gender" value="other">Other <br><br>
+                <label for="hobbies">Hobbies</label><br>
+                <input type="checkbox" name="hobbies" value="playing games">Playing Games <br>
+                <input type="checkbox" name="hobbies" value="listening music">Listening Music <br><br>
+                <label for="dob">Date of Birth:</label>
+                <input type="date" name="dob" id="dob" required><br><br>
+                <label for="subject">Favorite Subject</label>
+                <select name="subject" id="subject">
+                    <option value="">--Select--</option>
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="javascript">JavaScript</option>
+                </select><br><br>
+                <label for="resume">Upload Resume:</label><br>
+                <input type="file" name="resume" id="resume" required><br><br>
+                <label>
+                    <input type="checkbox">I agree to the terms and conditions
+                </label><br><br>
+                <input type="submit" value="submit">
+            </form>
+         </div>
+    </main>
     <hr>
-
-    <section>
-        <h2>My skills</h2>
-        <h3>Soft Skills</h3>
-        <ul>
-            <li>Time Management</li>
-            <li>Team Work</li>
-            <li>Communication</li>
-        </ul>
-        <h3>Technical Skills</h3>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-        </ul>
-    </section>
-    <hr>
-
-    <section>
-        <h2>Subjects & Grades</h2>
-        <Table>
-            <tr>
-                <th>Subjects</th>
-                <th>Marks</th>
-                <th>Grades</th>
-            </tr>
-            <tr>
-                <td>HTML</td>
-                <td>90</td>
-                <td>A</td>
-            </tr>
-            <tr>
-                <td>CSS</td>
-                <td>80</td>
-                <td>B+</td>
-            </tr>
-            <tr>
-                <td>JavaScript</td>
-                <td>70</td>
-                <td>B</td>
-            </tr>
-        </Table>
-    </section>
-    <hr>
-
-    <section>
-        <h2>Register Form</h2>
-        <form action="/submit" method="post"></form>
-        <label for="Full Name">Full Name</label>
-        <input type="text" id="Full Name" name="Full Name" placeholder="Enter your full name" required><br><br>
-        <label for="Email">Email</label>
-        <input type="Email" id="Email" name="Email" placeholder="Enter your email" required><br><br>
-        <label for="Password">Password</label>
-        <input type="password" id="Password" name="Password" placeholder="Enter your Password" required><br><br>
-        <label for="Confirm Password">Confirm Password</label>
-        <input type="password" id="Confirm Password" name="Confirm Password" placeholder="Enter your Confirm Password" required><br><br>
-        <label>Gender:</label><br>
-    <input type="radio" name="gender" value="male"> Male<br>
-    <input type="radio" name="gender" value="female"> Female<br><br>
-
-    <label>Hobbies:</label><br>
-    <input type="checkbox" name="hobby" value="Reading"> Reading<br>
-    <input type="checkbox" name="hobby" value="Gaming"> Gaming<br><br>
-
-    <label for="dob">Date of Birth:</label><br>
-    <input type="date" id="dob" name="dob"><br><br>
-
-    <label for="subject">Favorite Subject:</label><br>
-    <select id="subject" name="subject">
-      <option value="">--Select--</option>
-      <option value="html">HTML</option>
-      <option value="css">CSS</option>
-      <option value="js">JavaScript</option>
-    </select><br><br>
-
-    <label for="resume">Upload Resume:</label><br>
-    <input type="file" id="resume" name="resume"><br><br>
-
-    <input type="submit" value="Submit">
-  </form>
-</section>
-
-
-</main>
-
-<hr>
-    
-<footer>
-<p>© 2025 Tejas. All rights reserved.</p>
-<p>Follow me on:
-    <a href="https://www.linkedin.com/in/tejas-dunga-089b8a278">LinkedIn</a>
-</p>
-</footer>
-
+    <footer>
+        <p>© 2025 Tejas. All rights reserved.</p>
+        <p>Follow me on:
+            <a href="https://www.linkedin.com/in/tejas-dunga-089b8a278">LinkedIn</a>
+        </p>
+    </footer>
 </body>
 </html>
-        
-
-
-
