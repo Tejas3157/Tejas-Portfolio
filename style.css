@@ -9,7 +9,7 @@ body {
     justify-content: space-between; 
 }
 .nav-left{
-    padding-left: 10px;
+    padding-left:30px;
     color: brown;
 
 }
@@ -24,7 +24,28 @@ body {
     color: rgb(255, 255, 255);
     font-size: large;
 }
-.about-c{
+.home{
     display: flex;
     justify-content: space-between;
+    height: 85vh;
+    border: 2px solid red;
+    align-items: center;
+}
+.home-left{
+    width: 60vw;
+    padding-left: 80px;
+}
+.home-right{
+    
+    padding-right: 150px;
+}
+.logo-img{
+    height: 90px;
+}
+.image-logo{
+    height: 200px;
+    width: 140px;
+}
+.para{
+    text-align: justify;
 }
