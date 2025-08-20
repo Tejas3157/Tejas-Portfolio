@@ -1,0 +1,30 @@
+body {
+    background-color: black;
+    margin: 0;
+    color: aliceblue;
+}
+.navbar{
+    background-color: rgb(12, 12, 12);
+    display: flex;
+    justify-content: space-between; 
+}
+.nav-left{
+    padding-left: 10px;
+    color: brown;
+
+}
+.nav-right{
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+}
+.icon{
+    padding: 10px;
+    margin: 10px;
+    color: rgb(255, 255, 255);
+    font-size: large;
+}
+.about-c{
+    display: flex;
+    justify-content: space-between;
+}
