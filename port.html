@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tejas Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="text-bg-info text-center p-3">
+        <div class="container">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Here you can see my projects and skills</p>
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">MySite</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#About">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <hr>
+    <main>
+        <div id="About">
+            <h2>About Me</h2>
+            <img src="https://res.cloudinary.com/deqfgxqqe/image/upload/v1755690463/226E5A0505_lhsmla.jpg" alt="profile"
+                width="140" height="200">
+            <p>My name is <strong>D.Tejas</strong>. I started my journey as a UI/UX Developer</p>
+        </div>
+        <hr>
+        <div>
+            <h2>My Skills</h2>
+            <h3>Soft Skills</h3>
+            <ul>
+                <li>Team Work</li>
+                <li>Time Mangement</li>
+                <li>Communication</li>
+            </ul>
+            <h3>Technical Skills</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </div>
+        <hr>
+        <div class="table">
+            <h2>Subjects & Grades</h2>
+            <table>
+                <tr>
+                    <th>Subject</th>
+                    <th>Marks</th>
+                    <th>Grades</th>
+                </tr>
+                <tr>
+                    <td>HTML</td>
+                    <td>90</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>80</td>
+                    <td>B+</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>70</td>
+                    <td>B</td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+        <div>
+            <h2>Register Form</h2>
+            <form action="/submit">
+                <label for="name">Full Name</label>
+                <input type="text" name="fullname" id="fullname" placeholder="Enter your full name" required><br><br>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter your Email" required><br><br>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="Enter Password" required><br><br>
+                <label for="password">Confirm Password</label>
+                <input type="confirm-password" name="Confirm password" id="Confirm-password"
+                    placeholder="Enter Confirm Password" required><br><br>
+                <label for="gender">Gender:</label><br>
+                <input type="radio" name="gender" value="male">Male <br>
+                <input type="radio" name="gender" value="female">Female <br>
+                <input type="radio" name="gender" value="other">Other <br><br>
+                <label for="hobbies">Hobbies</label><br>
+                <input type="checkbox" name="hobbies" value="playing games">Playing Games <br>
+                <input type="checkbox" name="hobbies" value="listening music">Listening Music <br><br>
+                <label for="dob">Date of Birth:</label>
+                <input type="date" name="dob" id="dob" required><br><br>
+                <label for="subject">Favorite Subject</label>
+                <select name="subject" id="subject">
+                    <option value="">--Select--</option>
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="javascript">JavaScript</option>
+                </select><br><br>
+                <label for="resume">Upload Resume:</label><br>
+                <input type="file" name="resume" id="resume" required><br><br>
+                <label>
+                    <input type="checkbox">I agree to the terms and conditions
+                </label><br><br>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </main>
+    <hr>
+    <footer class="bg-dark text-white text-center py-3">
+        <p>© 2025 Tejas. All rights reserved.</p>
+        <p>Follow me on:
+            <a href="https://www.linkedin.com/in/tejas-dunga-089b8a278">LinkedIn</a>
+        </p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
